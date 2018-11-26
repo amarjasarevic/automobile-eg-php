@@ -5,7 +5,7 @@ $subject = "Neuwagenanfrage";
 
 $_POST = json_decode(file_get_contents('php://input'), true);
 
-$headers = "From: Automobile AG\r\n";
+$headers = "From: Automobile EG\r\n";
 $headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
