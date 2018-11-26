@@ -13,10 +13,9 @@ $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 $message = "<html><body>";
 $message .= "<h1>Automobile EG</h1>";
 $message .= "<p>Sehr geehrter Herr Grozdanic,</p>";
-$message .= "<br />";
 $message .= "<p>Sie haben einen Neuwagenwunsch. Bitte überprüfen Sie die Details.</p>";
 $message .= "<br />";
-$message .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
+$message .= '<table rules="all" style="border: 1px solid #666;" cellpadding="10">';
 $message .= "<tr style='background: #eee;'><td colspan='2'><strong>Kontaktdaten</strong></td></tr>";
 $message .= "<tr><td><strong>Name: </strong></td><td>" . strip_tags($_POST['name']) . "</td></tr>";
 $message .= "<tr><td><strong>E-Mail: </strong></td><td>" . strip_tags($_POST['email']) . "</td></tr>";
@@ -35,12 +34,11 @@ $message .= "<tr><td><strong>Farbe: </strong></td><td>" . strip_tags($_POST['col
 $message .= "<tr><td><strong>Preisvorstellung: </strong></td><td>" . strip_tags($_POST['price']) . " e</td></tr>";
 $message .= "<tr><td><strong>Hubraum: </strong></td><td>" . strip_tags($_POST['displacement']) . "</td></tr>";
 $message .= "<tr><td><strong>Sonstiges: </strong></td><td>" . strip_tags($_POST['other']) . "</td></tr>";
+$message .= "</table>";
 $message .= "<br />";
 $message .= "<p>Hoffe du magst es. :)</p>";
 $message .= "<br />";
-$message .= "<br />";
 $message .= "<p>Freundliche Grüße,</p>";
-$message .= "<br />";
 $message .= "<p>Automobil EG</p>";
 $message .= "</body></html>";
 
