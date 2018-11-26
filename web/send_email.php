@@ -1,5 +1,5 @@
 <?php
-$to = "amarjasarevic@hotmail.com";
+$to = "automobile.grozdanic@gmail.com";
 
 $subject = "Neuwagenanfrage";
 
@@ -31,7 +31,7 @@ $message .= "<tr><td><strong>TÜV: </strong></td><td>" . strip_tags($_POST['tuv'
 $message .= "<tr><td><strong>PS: </strong></td><td>" . strip_tags($_POST['ps']) . "</td></tr>";
 $message .= "<tr><td><strong>Türen: </strong></td><td>" . strip_tags($_POST['doors']) . "</td></tr>";
 $message .= "<tr><td><strong>Farbe: </strong></td><td>" . strip_tags($_POST['colour']) . "</td></tr>";
-$message .= "<tr><td><strong>Preisvorstellung: </strong></td><td>" . strip_tags($_POST['price']) . " e</td></tr>";
+$message .= "<tr><td><strong>Preisvorstellung: </strong></td><td>" . strip_tags($_POST['price']) . " €</td></tr>";
 $message .= "<tr><td><strong>Hubraum: </strong></td><td>" . strip_tags($_POST['displacement']) . "</td></tr>";
 $message .= "<tr><td><strong>Sonstiges: </strong></td><td>" . strip_tags($_POST['other']) . "</td></tr>";
 $message .= "</table>";
@@ -39,7 +39,7 @@ $message .= "<br />";
 $message .= "<p>Hoffe du magst es. :)</p>";
 $message .= "<br />";
 $message .= "<p>Freundliche Grüße,</p>";
-$message .= "<p>Automobil EG</p>";
+$message .= "<p>Automobile EG</p>";
 $message .= "</body></html>";
 
 mail($to, $subject, $message, $headers);
